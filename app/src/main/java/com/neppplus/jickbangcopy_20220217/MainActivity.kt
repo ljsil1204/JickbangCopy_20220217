@@ -2,9 +2,13 @@ package com.neppplus.jickbangcopy_20220217
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.neppplus.jickbangcopy_20220217.adapters.RoomAdapter
 import com.neppplus.jickbangcopy_20220217.datas.RoomData
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var mRoomAdapter : RoomAdapter
 
     val mRoomList = ArrayList<RoomData>()
 
@@ -22,6 +26,9 @@ class MainActivity : AppCompatActivity() {
         mRoomList.add(RoomData(1000,"서울시 양천구", -1,"8번째 방입니다"))
         mRoomList.add(RoomData(900,"서울시 금천구", -2,"9번째 방입니다"))
         mRoomList.add(RoomData(80000,"서울시 동대문구", 10,"10번째 방입니다"))
+
+        mRoomAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
+        roomListView.adapter = mRoomAdapter
 
     }
 }
