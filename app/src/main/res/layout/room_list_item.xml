@@ -18,6 +18,7 @@
         android:layout_marginStart="15dp">
 
         <TextView
+            android:id="@+id/txtPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8,000"
@@ -26,6 +27,7 @@
             android:textColor="#FFA509"/>
 
         <TextView
+            android:id="@+id/txtAddressAndFloor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="마포구 서교동, 1층"
@@ -34,6 +36,7 @@
             android:textSize="18sp"/>
 
         <TextView
+            android:id="@+id/txtDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="망원/홍대역 풀옵션"

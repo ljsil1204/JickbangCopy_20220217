@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         mRoomList.add(RoomData(2300,"서울시 동작구", 1,"7번째 방입니다"))
         mRoomList.add(RoomData(1000,"서울시 양천구", -1,"8번째 방입니다"))
         mRoomList.add(RoomData(900,"서울시 금천구", -2,"9번째 방입니다"))
-        mRoomList.add(RoomData(80000,"서울시 동대문구", 10,"10번째 방입니다"))
+        mRoomList.add(RoomData(80000,"서울시 동대문구", 0,"10번째 방입니다"))
 
         mRoomAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
         roomListView.adapter = mRoomAdapter
