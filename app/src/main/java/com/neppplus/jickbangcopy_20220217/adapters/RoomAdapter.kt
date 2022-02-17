@@ -12,7 +12,6 @@ class RoomAdapter(
     val mContext : Context,
     val resId : Int,
     val mList : ArrayList<RoomData>
-
 ) : ArrayAdapter<RoomData>(mContext, resId, mList) {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
